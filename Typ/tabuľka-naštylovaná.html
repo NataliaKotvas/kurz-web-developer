@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuľka-naštýlovaná</title>
+    <style>
+        .styled-table {
+            border-collapse: collapse; /* Odstráni okaje okolo buniek*/
+            margin: 25px 0; /* keď jedlo číslo, tak to platí pre každu stranu okraja, čiže zhora, zdola, zprava,zľava*/
+            font-size: 0.9em; /* Nastavenie veľkosti písma, jednotku em reprezentuje pomer voci pôvodnej veľkosti, 1em je 100% */
+            font-family: sans-serif; /* na stránke sme použili font písma */
+            min-width: 400px; /* V tomto príklade sa tieň tvorí z 2 pixely vpravo a 2 pixely dole od prvku s triedou "box", s rozmazavaním 4 pixely a čiastočnou priehľadnosťou 0.15 */
+            box-shadow: 2px 2px 4px rgba(145, 42, 42, 1);
+            -webkit-box-shadow: 2px 2px 4px rgba(145, 42, 42, 1);
+            -moz-box-shadow: 2px 2px 4px rgba(145, 42, 42, 1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        .styled table th, .style table td  {
+            padding: 12px 15px;
+        }
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009688;
+        }
+        .styled-table tbody tr:hover {
+            background-color: #dddddd;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009688;
+        }
+        .styled-table tbody
+    </style>
+</head>
+<body>
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+        </tr>
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+        </tr>
+    <!-- and so on... -->
+        </tbody>
+    </table>
+
+</body>
+</html>
