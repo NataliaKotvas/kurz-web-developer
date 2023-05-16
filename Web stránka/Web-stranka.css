@@ -1,0 +1,136 @@
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style:none;
+}
+
+.active {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Hlavička */
+
+.navbar {
+    position:absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+} /* vsadenie menu do obrazku */
+.nav-links {
+    display: flex;
+    align-items: center;
+} /*zarovnanie hlavičky aj tlačítkom */
+.nav-links li {
+    margin: 0 30px;
+} /* Rozloženie Menu */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image:url('Fotky/Taliansko-header.jpg');
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+} /* fotka ako hlavička obrazovky */
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+} /*Zarovnanie obi dvoch textoch v strede*/
+
+.header-content h2 {
+    font-size:15vmin;
+} /* úprava textu v strede H2 */
+
+.line {
+    width: 250px;
+    height: 10px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+} /* Čiara medzi textom */
+
+.header-content h1 {
+    font-size: 15vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}  /* úprava textu v strede nadpis H*/
+
+.ctn {
+    padding: 25px 70px;
+    background: red;
+    border-radius: 50px;
+    color: whitesmoke;
+} /* Červené ikonky Kontakt a Čítaj viac*/
+
+/*Pamiatky*/
+ section {
+     width: 80%;
+     margin: 80px auto;
+ }  /* úprava sekcie v ktorej sú pamiatky*/
+
+.Pamiatky {
+    text-align: center;
+    font-size: 4vmin ;
+    color: orangered;
+} /* úprava textu */
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+} /* zarovnanie obrázkov vo veľkom dive*/
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+
+
+
+
+} /* úprava obrazkov v dvoch divou */
+
+h4 {
+    font-size: 3vmin;
+    color: orangered;
+    margin: 20px auto;
+}
+p {
+    color: black;
+    padding: 0px 40px;
+}
+.events    {
+margin-bottom: 150px;
+}
+.Video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    -webkit-box-shadow: -54px 33px 29px -1px rgba(236,95,2,1);
+
+}
+
