@@ -1,62 +1,175 @@
-<!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Meta značka, ktorá určuje kontabilitu s Explorer Edge prehladačom -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Pomáha vytvoriť responsívny dizajn -->
-    <title> TALIANSKO</title>
-
-    <!-- Link CSS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
     <link rel="stylesheet" href="Web-stranka.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
+    <!-- Google Fonts -->
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar">
-    <h1 class="logo">TALIANSKO</h1>
-    <ul class="nav-links">
-        <li class="active"><a href="#"></a>Home</li>
-        <li><a href="#"></a>Tours</li>
-        <li><a href="#"></a>Explore</li>
-        <li><a href="#"></a>About</li>
-        <li class="ctn"><a href="#"></a>Contact</li>
-    </ul>
-</nav>
-    <header>
-        <div class="header-content">
-            <h2>Nadherné Taliansko</h2>
-            <div class="line"></div>
-			<h1>Milano</h1>
-			<a href="#" class="ctn">Čítaj viac</a>
+
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href=Web-stranka.css id="logo"><span>R</span>astliny</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#book">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallary">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
         </div>
-    </header>
-<!-- Pamiatky -->
- <section >
-     <div class="Pamiatky">
-         <h1>Pamiatky</h1>
-         <div class="line"></div>
-     </div>
-     <div class="row" >
-         <div class="col">
-             <img src="Fotky/Obrázok1.png" alt=""width="600px" height="700px"/>
-             <h4>Gallery Viktora Emanuela II. </h4>
-             <p>Je pasáž, ktorá sa skladá z dvoch (200 a 100 metrov dlhých) navzájom prepojených arkád so sklenenou kupolou. Hlavným vstupom je oblúk z Piazza Duomo (z námestia, kde sa nachádza milánska katedrála).</p>
-             <a href="#" class="ctn">Foto</a>
-         </div>
-         <div class="col">
-             <img src="Fotky/Obrázok2.png" alt=""  width="600px" height="700px"/>
-             <h4>Piazza del Duomo</h4>
-             <p>Piazza del Duomo je najväčším námestím v Miláne. Je to centrom mesta v zmysle geografickom, ale aj v zmysle kultúry a umenia. Práve tu sa nachádza vyššie spomínaný Dóm či Kráľovská galéria a často sa tu konajú rôzne podujatia.</p>
-             <a href="#" class="ctn">Foto</a>
-         </div>
-     </div>
- </section>
-</section>
-    <div class="Video">
-        <div class="Video">
-        <iframe width="1046" height="523" src="https://www.youtube.com/embed/_UXRcxO5jX4" title="Things To Do In MILAN, Italy - TOP 12 (Save this list!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</nav>
+<!-- Navbar Koniec -->
+
+
+<!-- Domovska sekcia zaciatok -->
+<div class="home">
+    <div class="content">
+        <h5>Domové rastilny</h5>
+        <h1>Monstera <span class="changecontent"></span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi.</p>
+        <a href="#book">Zisti viac</a>
+    </div>
+</div>
+<!-- Domovska sekcia koniec -->
+
+
+<!-- Sekcia formulár -->
+<section class="book" id="book">
+    <div class="container">
+        <div class="main-text">
+            <h1><span>O</span>bjednaj</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="IMG_7889.JPG" alt="" />
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <form action="#">
+                    <input type="text" class="form-control" placeholder="Meno" required><br>
+                    <input type="text" class="form-control" placeholder="Priezvisko" required><br>
+                    <input type="date" class="form-control" placeholder="Dátum narodenia" required><br>
+                    <textarea class="form-control" rows="5" name="text" placeholder="Info"></textarea>
+                    <input type="submit" value="Objednaj" class="submit" required>
+                </form>
+            </div>
         </div>
     </div>
 </section>
-</body>
-</html>
+<!-- Sekcia formulár  -->
+
+
+<!-- Fotky-->
+<section class="packages" id="packages">
+    <div class="container">
+        <div class="main-txt">
+            <h1><span>P</span>ackages</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Leaves Poster.jpg" alt="" />
+                    <div class="card-body">
+                        <h3>M</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Why you should avoid moving your fiddle-leaf fig.jpg" alt=""/>
+                         <div class="card-body">
+                        <h3>O</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                         </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                     <img src="badf7192-991d-464c-9a93-322aff41709e.jpg" height="624" width="416" alt=""/>
+                         <div class="card-body">
+                         <h3>N</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                         </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+
+                    <img src="Download premium image of Fresh green areca palm leaf by a white wall by Jira about interior, window shadow, window, palm, and areca palm 2341382.jpg"
+                         height="614" width="416"/>
+                    <div class="card-body">
+                        <h3>M</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Greenery.jpg" height="614" width="416"/>
+                        <div class="card-body">
+                        <h3>O</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="Complete Guide to Caring for 15 Indoor Plants.jpg" height="614" width="416"/>
+                    <div class="card-body">
+                        <h3>N</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</section>
+<!-- Fotky -->
+
